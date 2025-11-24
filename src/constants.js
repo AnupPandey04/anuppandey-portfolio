@@ -23,7 +23,7 @@ import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import viteLogo from './assets/tech_logo/Vite.js.png';
 import passportLogo from './assets/tech_logo/passport.png';
-import mongooseLogo from './assets/tech_logo/mongoose.js.png';
+import mongooseLogo from './assets/tech_logo/Mongoose.js.png';
 import cloudinaryLogo from './assets/tech_logo/cloudinary.png';
 import renderLogo from './assets/tech_logo/render.png';
 import geminiLogo from './assets/tech_logo/gemini.png';
