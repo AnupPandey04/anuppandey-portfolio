@@ -21,7 +21,7 @@ import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
-import viteLogo from './assets/tech_logo/vite.js.png';
+import viteLogo from './assets/tech_logo/Vite.js.png';
 import passportLogo from './assets/tech_logo/passport.png';
 import mongooseLogo from './assets/tech_logo/mongoose.js.png';
 import cloudinaryLogo from './assets/tech_logo/cloudinary.png';
