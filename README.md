@@ -175,9 +175,3 @@ Configured in `Contact.jsx`:
 - 🌐 **Portfolio:** https://www.anuppandey.me  
 
 ---
-
-## 📜 License
-
-**MIT License**
-
----
