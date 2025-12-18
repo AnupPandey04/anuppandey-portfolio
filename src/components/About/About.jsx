@@ -26,6 +26,7 @@ const About = () => {
             <span className="text-white">I am a </span>
             <TypeAnimation
               sequence={[
+                'Problem Solver', 2000,
                 'Full-Stack MERN Developer', 2000,
                 'Data Science Enthusiast', 2000,
                 'Machine Learning Practitioner', 2000,
@@ -48,7 +49,7 @@ const About = () => {
 
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1azNSWvLyF98mFb2oJYpKNWYs8h8aU9Dt/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1qnoMEdA5TNb9AkhW5XNB6alcflVbpH7Z/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 transform hover:scale-105"
