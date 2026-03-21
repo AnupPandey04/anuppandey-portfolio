@@ -146,7 +146,7 @@ export const experiences = [
   {
     id: 0,
     img: gokboruLogo,
-    role: "MERN Stack Developer",
+    role: "Training - MERN Stack",
     company: "Gokboru Tech",
     date: "June 2025 - July 2025",
     desc: "Completed a 6-week intensive MERN Stack Developer Summer Training (June 2 – July 12, 2025) at Gokboru Tech, focusing on building and deploying full-stack web applications using MongoDB, Express.js, React.js, and Node.js. Gained hands-on experience in creating responsive UIs with React, managing state using Hooks and Context API, and developing RESTful APIs with Express. Worked with MongoDB & Mongoose, implemented secure authentication via Passport.js, and deployed projects to Render, Vercel, and MongoDB Atlas. As the final project, developed WayWise — a full-stack travel listings platform inspired by Airbnb, featuring property listings, Cloudinary image uploads, MapTiler SDK maps, Passport.js authentication, and a review/rating system.",
@@ -190,7 +190,7 @@ export const education = [
     img: lpuLogo,
     school: "Lovely Professional University",
     date: "Aug 2023 - July 2027",
-    grade: "8.02 CGPA",
+    grade: "7.97 CGPA",
     desc: "Pursuing Bachelor of Technology (BTech) in Computer Science and Engineering at Lovely Professional University. The program focuses on core CS fundamentals, software engineering, data structures, algorithms, operating systems, database systems, web development, and emerging technologies. Engaged in academic projects, coding practice, and skill-building activities aimed at developing strong problem-solving and engineering abilities.",
     degree: "Bachelor of Technology - BTech (Computer Science & Engineering)",
   },

@@ -1,5 +1,5 @@
 import React from "react";
-import { education } from "../../constants"; // Import the education data
+import { education } from "../../constants";
 
 const Education = () => {
   return (
@@ -9,23 +9,26 @@ const Education = () => {
     >
       {/* Section Title */}
       <div className="text-center mb-12 md:mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white">EDUCATION</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-white">
+          EDUCATION
+        </h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-base sm:text-lg font-semibold max-w-2xl mx-auto px-4">
-          My education has been a journey of learning and development. Here are the details of my academic background
+          My education has been a journey of learning and development. Here are
+          the details of my academic background
         </p>
       </div>
 
-      {/* Education Timeline */}
+      {/* Timeline */}
       <div className="relative">
 
         {/* Desktop Vertical Line */}
-        <div className="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-white h-full"></div>
+        <div className="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-white h-full"></div>
 
         {/* Mobile Vertical Line */}
-        <div className="sm:hidden absolute left-6 w-1 bg-white h-full"></div>
+        <div className="sm:hidden absolute left-5 w-[2px] bg-white h-full"></div>
 
-        {/* Education Entries */}
+        {/* Education Items */}
         {education.map((edu, index) => (
           <div
             key={edu.id}
@@ -38,8 +41,8 @@ const Education = () => {
             <div
               className="
                 absolute 
-                left-6 sm:left-1/2 
-                transform -translate-x-1/2
+                left-4 sm:left-1/2 
+                sm:-translate-x-1/2
                 bg-gray-400 border-4 border-[#8245ec]
                 w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16
                 rounded-full 
@@ -54,10 +57,10 @@ const Education = () => {
               />
             </div>
 
-            {/* Content Section */}
+            {/* Card */}
             <div
               className={`
-                w-[90%] mx-auto sm:w-[85%] md:max-w-md 
+                w-[85%] ml-12 sm:ml-0 sm:w-[45%]
                 p-4 sm:p-6 md:p-8 
                 mt-12 sm:mt-0 
                 rounded-2xl shadow-2xl border border-white 
@@ -65,17 +68,18 @@ const Education = () => {
                 shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]
                 transform transition-transform duration-300 hover:scale-105
                 break-words
-                ${index % 2 === 0 
-                  ? "sm:ml-8 sm:mr-auto" 
-                  : "sm:mr-8 sm:ml-auto"
+                ${
+                  index % 2 === 0
+                    ? "sm:ml-8 sm:mr-auto"
+                    : "sm:mr-8 sm:ml-auto"
                 }
               `}
             >
 
-              {/* Logo + Text Row */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+              {/* Header */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                 
-                {/* School Logo */}
+                {/* Logo */}
                 <div className="w-20 h-16 sm:w-24 sm:h-16 bg-white rounded-md overflow-hidden flex-shrink-0">
                   <img
                     src={edu.img}
@@ -84,33 +88,31 @@ const Education = () => {
                   />
                 </div>
 
-                {/* Degree + School */}
-                <div className="flex-1 min-w-0 break-words">
-                  <h3 className="text-lg sm:text-xl font-semibold text-white leading-tight break-words">
+                {/* Text */}
+                <div className="flex-1">
+                  <h3 className="text-lg sm:text-xl font-semibold text-white leading-tight">
                     {edu.degree}
                   </h3>
-                  <h4 className="text-base sm:text-md text-gray-300 mt-1 break-words">
+                  <h4 className="text-base text-gray-300 mt-1">
                     {edu.school}
                   </h4>
-
-                  {/* Date */}
-                  <p className="text-sm text-gray-500 mt-2 break-words">
+                  <p className="text-sm text-gray-500 mt-2">
                     {edu.date}
                   </p>
                 </div>
               </div>
 
               {/* Grade */}
-              <p className="mt-4 text-gray-400 font-bold break-words">
+              <p className="mt-4 text-gray-400 font-bold">
                 Grade: {edu.grade}
               </p>
 
               {/* Description */}
-              <p className="mt-3 text-gray-400 text-sm sm:text-base leading-relaxed break-words">
+              <p className="mt-3 text-gray-400 text-sm sm:text-base leading-relaxed">
                 {edu.desc}
               </p>
-            </div>
 
+            </div>
           </div>
         ))}
       </div>
