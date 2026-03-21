@@ -1,4 +1,3 @@
-import React from "react";
 import { TypeAnimation } from 'react-type-animation';
 import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/profile2.jpeg';
@@ -49,7 +48,7 @@ const About = () => {
 
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1qnoMEdA5TNb9AkhW5XNB6alcflVbpH7Z/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1gwQcCeeqg_jfVCKbVsybjZcQ6If8M_mu/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 transform hover:scale-105"

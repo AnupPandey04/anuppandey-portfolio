@@ -1,6 +1,3 @@
-import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
-
 const Footer = () => {
   // Smooth scroll function
   const handleScroll = (sectionId) => {
@@ -35,30 +32,10 @@ const Footer = () => {
           ))}
         </nav>
 
-        {/* Social Media Icons - Responsive */}
-        <div className="flex flex-wrap justify-center space-x-4 mt-6">
-          {[
-            { icon: <FaFacebook />, link: "https://www.facebook.com/profile.php?id=100030390923412" },
-            { icon: <FaTwitter />, link: "https://x.com/AnupPandey7050?t=51H2RLiB0sYJh5uH7DgiHw&s=09" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/anup-pandey-/" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/ansh.__pvt__/" },
-            
-          ].map((item, index) => (
-            <a
-              key={index}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xl hover:text-purple-500 transition-transform transform hover:scale-110"
-            >
-              {item.icon}
-            </a>
-          ))}
-        </div>
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Anup Pandey. All rights reserved.
+          © 2026 Anup Pandey. All rights reserved.
         </p>
       </div>
     </footer>

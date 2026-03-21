@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const BlurBlob = ({ position, size }) => {
   // Destructure position and size with default values
-  const { top, left } = position
-  const { width, height } = size 
+  const { top = "50%", left = "50%" } = position || {};
+  const { width = "200px", height = "200px" } = size || {};
 
   return (
     <div
