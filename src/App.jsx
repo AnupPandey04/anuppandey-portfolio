@@ -9,6 +9,7 @@ import Contact from "./components/Contact/Contact"
 import Footer from "./components/Footer/Footer"
 import BlurBlob from "./BlurBlob"
 import Certificates from "./components/Certificates/Certificates";
+import Achievements from "./components/Achievements/Achievements";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <About />
         <Skills />
         <Experience />
+        <Achievements />
         <Certificates />
         <Work />
         <Education />
