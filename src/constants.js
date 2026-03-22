@@ -178,7 +178,7 @@ export const experiences = [
     img: gokboruLogo,
     role: "Training - MERN Stack",
     company: "Gokboru Tech",
-    date: "June' 25 - July' 25",
+    date: "Jun' 25 - Jul' 25",
     desc: "Completed a 6-week intensive MERN Stack Developer Summer Training (June 2 – July 12, 2025) at Gokboru Tech, focusing on building and deploying full-stack web applications using MongoDB, Express.js, React.js, and Node.js. Gained hands-on experience in creating responsive UIs with React, managing state using Hooks and Context API, and developing RESTful APIs with Express. Worked with MongoDB & Mongoose, implemented secure authentication via Passport.js, and deployed projects to Render, Vercel, and MongoDB Atlas. As the final project, developed WayWise — a full-stack travel listings platform inspired by Airbnb, featuring property listings, Cloudinary image uploads, MapTiler SDK maps, Passport.js authentication, and a review/rating system.",
     skills: [
       "HTML",
@@ -201,7 +201,7 @@ export const experiences = [
     img: ngoLogo,
     role: "Public Health Intern",
     company: "Birsa Munda Welfare Foundation (NGO)",
-    date: "June' 24 - July' 24",
+    date: "Jun' 24 - Jul' 24",
     desc: "Contributed to a public health initiative in the Baridih region of Jamshedpur, assessing BCG vaccination eligibility among adults. Conducted extensive door-to-door surveys, collecting demographic and vaccination data, and identified high-risk individuals based on factors like TB exposure, BMI, diabetes, smoking history, and age. Raised awareness about tuberculosis prevention, collaborated with healthcare providers for vaccination support, analyzed survey data to identify barriers such as awareness and access issues, and prepared a structured project report with insights and recommendations.",
     skills: [
       "Field Research",
