@@ -21,13 +21,25 @@ const Work = () => {
           <div
             key={project.id}
             onClick={() => setSelectedProject(project)}
-            className="cursor-pointer border border-white bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition"
+            className="relative cursor-pointer border border-white/20 bg-gray-900 rounded-2xl overflow-hidden 
+            hover:scale-105 transition duration-300 
+            hover:shadow-[0_0_25px_rgba(130,69,236,0.5)]"
           >
+            {/* 🔴 LIVE BADGE */}
+            {project.webapp && (
+              <div className="absolute top-3 right-3 bg-red-500 text-white text-[10px] px-2 py-1 rounded-full font-semibold shadow-md z-10 animate-pulse">
+                LIVE
+              </div>
+            )}
+
+            {/* Image */}
             <img
               src={project.image}
               alt={project.title}
               className="w-full h-48 object-cover"
             />
+
+            {/* Content */}
             <div className="p-5">
               <h3 className="text-xl font-bold text-white">
                 {project.title}
@@ -42,13 +54,15 @@ const Work = () => {
 
       {/* 🔥 MODAL */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
-          <div className="bg-gray-900 w-[90%] md:w-[70%] lg:w-[50%] rounded-2xl p-6 relative">
-
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-50 px-4">
+          <div
+            className="bg-gray-900 w-full max-w-2xl rounded-2xl p-6 relative 
+            animate-[fadeIn_0.3s_ease-in-out]"
+          >
             {/* Close Button */}
             <button
               onClick={() => setSelectedProject(null)}
-              className="absolute top-4 right-4 text-white text-2xl"
+              className="absolute top-4 right-4 text-white text-2xl hover:text-red-500"
             >
               ✖
             </button>
@@ -60,11 +74,12 @@ const Work = () => {
               className="w-full h-60 object-cover rounded-lg"
             />
 
-            {/* Content */}
+            {/* Title */}
             <h2 className="text-2xl font-bold text-white mt-4">
               {selectedProject.title}
             </h2>
 
+            {/* Description */}
             <p className="text-gray-400 mt-3">
               {selectedProject.description}
             </p>
@@ -83,20 +98,31 @@ const Work = () => {
 
             {/* Buttons */}
             <div className="flex gap-4 mt-6">
-              <a
-                href={selectedProject.github}
-                target="_blank"
-                className="w-1/2 text-center bg-gray-800 py-2 rounded-lg text-white"
-              >
-                Code
-              </a>
-              <a
-                href={selectedProject.webapp}
-                target="_blank"
-                className="w-1/2 text-center bg-purple-600 py-2 rounded-lg text-white"
-              >
-                Live
-              </a>
+              {selectedProject.github && (
+                <a
+                  href={selectedProject.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-center py-3 rounded-lg text-white transition ${
+                    selectedProject.webapp
+                      ? "w-1/2 bg-gray-800 hover:bg-gray-700"
+                      : "w-full bg-gray-800 hover:bg-gray-700"
+                  }`}
+                >
+                  Code
+                </a>
+              )}
+
+              {selectedProject.webapp && (
+                <a
+                  href={selectedProject.webapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2 text-center bg-purple-600 hover:bg-purple-700 py-3 rounded-lg text-white transition"
+                >
+                  Live
+                </a>
+              )}
             </div>
           </div>
         </div>

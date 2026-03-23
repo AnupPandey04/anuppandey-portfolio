@@ -49,6 +49,7 @@ import waywiseLogo from './assets/work_logo/waywise.png';
 import wanderwiseLogo from './assets/work_logo/wanderwise.png';
 import auraLogo from './assets/work_logo/aura.png';
 import dropoutLogo from './assets/work_logo/dropout.png';
+import nfhs from './assets/work_logo/nfhs.png';
 
 
 // Certificates
@@ -463,4 +464,14 @@ export const projects = [
     github: "https://github.com/AnupPandey04/Aura---A-Live-Weather-Application",
     webapp: "https://aura-a-live-weather-application.vercel.app/",
   },
+  {
+  id: 3,
+  title: "NFHS-5 India Health Analytics Dashboard",
+  description:
+    "Integrated NFHS datasets (state, district ~13,900+ records, and national time-series 1992–2021) to build a unified analytics model. Performed large-scale data transformation using Power Query, designed a scalable star schema, and developed interactive Power BI dashboards with DAX-driven insights for maternal health, malnutrition, and NCD analysis.",
+  image: nfhs,
+  tags: ["Power BI", "DAX", "Power Query", "Data Modeling", "Analytics"],
+  github: "https://github.com/AnupPandey04/nfhs-india-health-analytics-dashboard",
+  webapp: "",
+}
 ];  
