@@ -200,7 +200,7 @@ export const experiences = [
   {
     id: 1,
     img: ngoLogo,
-    role: "Public Health Intern",
+    role: "Intern - Public Health",
     company: "Birsa Munda Welfare Foundation (NGO)",
     date: "Jun' 24 - Jul' 24",
     desc: "Contributed to a public health initiative in the Baridih region of Jamshedpur, assessing BCG vaccination eligibility among adults. Conducted extensive door-to-door surveys, collecting demographic and vaccination data, and identified high-risk individuals based on factors like TB exposure, BMI, diabetes, smoking history, and age. Raised awareness about tuberculosis prevention, collaborated with healthcare providers for vaccination support, analyzed survey data to identify barriers such as awareness and access issues, and prepared a structured project report with insights and recommendations.",
