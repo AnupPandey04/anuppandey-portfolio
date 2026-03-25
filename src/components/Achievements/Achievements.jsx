@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { FaCode, FaFire, FaTrophy } from "react-icons/fa";
-import { SiLeetcode, SiGeeksforgeeks, SiCodeforces, SiHackerrank } from "react-icons/si";
+import { FaCode, FaFire, FaTrophy, FaExternalLinkAlt } from "react-icons/fa";
+import {
+  SiLeetcode,
+  SiGeeksforgeeks,
+  SiCodeforces,
+  SiHackerrank,
+} from "react-icons/si";
 
 // 🔥 Counter Hook
 const useCountUp = (end, duration = 1500) => {
@@ -33,10 +38,26 @@ const Achievements = () => {
   const streak = useCountUp(40);
 
   const stats = [
-    { label: "Problems Solved (across platforms)", value: problems + "+", icon: <FaCode /> },
-    { label: "Active Days", value: activeDays + "+", icon: <FaFire /> },
-    { label: "Contest Rating on LeetCode", value: rating, icon: <FaTrophy /> },
-    { label: "Max Streak on LeetCode", value: streak, icon: <FaFire /> },
+    {
+      label: "Problems Solved",
+      value: problems + "+",
+      icon: <FaCode />,
+    },
+    {
+      label: "Active Days",
+      value: activeDays + "+",
+      icon: <FaFire />,
+    },
+    {
+      label: "LeetCode Rating",
+      value: rating,
+      icon: <FaTrophy />,
+    },
+    {
+      label: "Max Streak",
+      value: streak,
+      icon: <FaFire />,
+    },
   ];
 
   const badges = [
@@ -48,7 +69,7 @@ const Achievements = () => {
     { name: "C", img: "/badges/c.png" },
     { name: "JavaScript", img: "/badges/js.png" },
     { name: "50 Days Badge 2025", img: "/badges/50-2025.gif" },
-    { name: "Introduction to Pandas", img: "/badges/pandas.gif" },
+    { name: "Pandas", img: "/badges/pandas.gif" },
   ];
 
   return (
@@ -61,7 +82,7 @@ const Achievements = () => {
         <h2 className="text-4xl font-bold">ACHIEVEMENTS</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4">
-          A snapshot of my coding journey, achievements, and consistency across platforms
+          A snapshot of my coding journey, achievements, and consistency
         </p>
       </div>
 
@@ -72,9 +93,9 @@ const Achievements = () => {
             key={index}
             className="bg-gray-900 border border-gray-700 rounded-2xl p-6 text-center 
             hover:scale-105 transition duration-300 
-            shadow-[0_0_20px_rgba(130,69,236,0.3)]"
+            hover:shadow-[0_0_25px_rgba(130,69,236,0.5)]"
           >
-            <div className="text-3xl text-purple-500 mb-2 flex justify-center">
+            <div className="text-3xl text-purple-500 mb-2 flex justify-center animate-pulse">
               {stat.icon}
             </div>
             <h3 className="text-3xl font-bold">{stat.value}</h3>
@@ -85,6 +106,7 @@ const Achievements = () => {
 
       {/* 🌐 Platforms */}
       <div className="flex justify-center gap-8 text-4xl mb-12 text-gray-400">
+        {/* LeetCode */}
         <a
           href="https://leetcode.com/u/AnupOptimized/"
           target="_blank"
@@ -94,6 +116,7 @@ const Achievements = () => {
           <SiLeetcode />
         </a>
 
+        {/* GFG */}
         <a
           href="https://www.geeksforgeeks.org/profile/anupcodes"
           target="_blank"
@@ -103,6 +126,7 @@ const Achievements = () => {
           <SiGeeksforgeeks />
         </a>
 
+        {/* Codeforces */}
         <a
           href="https://codeforces.com/profile/ansh47822"
           target="_blank"
@@ -112,6 +136,7 @@ const Achievements = () => {
           <SiCodeforces />
         </a>
 
+        {/* HackerRank */}
         <a
           href="https://www.hackerrank.com/profile/ansh47822"
           target="_blank"
@@ -119,6 +144,16 @@ const Achievements = () => {
           className="hover:text-green-400 transform hover:scale-125 transition"
         >
           <SiHackerrank />
+        </a>
+
+        {/* 🔥 Codolio */}
+        <a
+          href="https://codolio.com/profile/anup-pandey"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-purple-400 transform hover:scale-125 transition"
+        >
+          <FaExternalLinkAlt />
         </a>
       </div>
 
@@ -129,12 +164,12 @@ const Achievements = () => {
             key={index}
             className="bg-gray-900 border border-gray-700 rounded-xl p-4 text-center 
             hover:scale-110 transition duration-300 
-            shadow-[0_0_15px_rgba(130,69,236,0.4)]"
+            hover:shadow-[0_0_20px_rgba(130,69,236,0.6)]"
           >
             <img
               src={badge.img}
               alt={badge.name}
-              className="w-16 h-16 object-contain mx-auto"
+              className="w-16 h-16 object-contain mx-auto animate-[float_3s_ease-in-out_infinite]"
             />
             <p className="text-xs mt-2 text-gray-300">{badge.name}</p>
           </div>
@@ -144,13 +179,30 @@ const Achievements = () => {
       {/* ✨ Summary */}
       <div className="text-center mt-12 text-gray-400 max-w-2xl mx-auto">
         <p>
-          Solved <span className="text-white font-semibold">460+ problems</span> across platforms, 
-          maintained <span className="text-white font-semibold">160+ active coding days</span>, 
-          and earned <span className="text-white font-semibold">5★ Gold Badges</span> in  
-          <span className="text-white font-semibold"> C++, Python, and Java</span> on HackerRank,
-        along with top badges on LeetCode.
+          Solved{" "}
+          <span className="text-white font-semibold">460+ problems</span>{" "}
+          across platforms, maintained{" "}
+          <span className="text-white font-semibold">
+            160+ active coding days
+          </span>
+          , and achieved{" "}
+          <span className="text-white font-semibold">
+            1500+ contest rating
+          </span>{" "}
+          on LeetCode. Earned multiple badges across platforms including
+          HackerRank and LeetCode.
         </p>
       </div>
+
+      {/* 🔥 Floating Animation */}
+      <style>
+        {`
+          @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+          }
+        `}
+      </style>
     </section>
   );
 };
